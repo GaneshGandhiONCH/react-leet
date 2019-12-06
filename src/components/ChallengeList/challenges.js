@@ -1,10 +1,4 @@
-import React, {Component} from 'react';
-import Container from 'react-bootstrap/Container';
-import ChallengeList from './components/ChallengeList/index.js';
-import Row from 'react-bootstrap/Row';
-import './App.css';
-
-let challenges = [
+const challenges = [
   {
     id: 1, 
     excerciseName: 'FizzBuzz', 
@@ -178,27 +172,3 @@ let challenges = [
    isComplete: false
   }
 ];
-
-
-class App extends Component {
-  render(){
-  return (
-    <div className="App">
-      <header className="mt-5 ml-5">
-        <h1>Leet Code Excercises built in React</h1> 
-        <p>This is the implementation of Leet Code excercises in React for the sake of practicing algorithm construction while using tools of the trade. The goal of this is to demonstrate the React way of approaching these problems.</p>
-      </header>
-      {/* Table will list all excercises and link to corresponding components */}
-        <Container className="ml-5"> 
-          <Row>
-            <code>Challenges will go below. </code>
-            <ChallengeList challenges = {challenges}/>
-
-          </Row>
-        </Container>
-    </div>
-  );
-}
-}
-
-export default App;
