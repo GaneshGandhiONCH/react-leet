@@ -1,19 +1,30 @@
 import React from 'react';
-// import Challenge from '../Challenge/index.js';
+import Table from 'react-bootstrap/Table';
 
 
 class ChallengeList extends React.Component {
   render(){
     return(
 
-      <ol className = "contact-list">
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Excercise Name</th>
+            <th>Challenge </th>
+          </tr>
+        </thead>
       {this.props.challenges.map((challenge) => (
-          <li key = {challenge.id} className = 'contact-list-item'>
-            <p>{challenge.excerciseName}</p><br/>
-            <p>{challenge.challengeDescription}</p>
-          </li>
+        <tbody>
+          <tr key = {challenge.id} className = 'contact-list-item'>
+            <td>{challenge.id}</td>
+            <td>{challenge.excerciseName}</td>
+            <td>{challenge.challengeDescription}</td>
+          </tr>
+        </tbody>
+    
       ))}
-      </ol>
+      </Table>
     )
   }
 
