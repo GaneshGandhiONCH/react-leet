@@ -1,4 +1,4 @@
-Here you may find leet code excercises implemented in react for practice and fun. 
+Here you may find leet code excercises implemented in React.js for practice and fun. 
 
 ## 
 
