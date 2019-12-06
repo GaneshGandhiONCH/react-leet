@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here you may find leet code excercises implemented in react for practice and fun. 
 
-## Available Scripts
+## 
 
 In the project directory, you can run:
 
